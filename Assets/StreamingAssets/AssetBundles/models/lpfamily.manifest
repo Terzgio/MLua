@@ -1,0 +1,40 @@
+ManifestFileVersion: 0
+CRC: 1618898668
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 878b143f5640faa368cf4c5151da6ad6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 36dbbd6a709a28f4dd0c5a0ab1951293
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+Assets:
+- Assets/Data/Agents/Prefabs/kid Variant.prefab
+- Assets/Data/Agents/Prefabs/woman Variant.prefab
+- Assets/Data/Agents/Prefabs/grandpa Variant.prefab
+- Assets/Data/Agents/Prefabs/grandma Variant.prefab
+- Assets/Data/Agents/Prefabs/man Variant.prefab
+Dependencies: []

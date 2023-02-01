@@ -1,0 +1,43 @@
+ManifestFileVersion: 0
+CRC: 2240363390
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 5e0d613f902e1901f954e2e0689d55a5
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 09353e049fb97fdba08f13d2b20a3e6e
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: b4192dbcfe90d4a428051a3ccd09c562, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+Assets:
+- Assets/Data/Agents/Prefabs/NeoMan.prefab
+- Assets/Data/Agents/Prefabs/xbot.prefab
+- Assets/Data/Agents/Prefabs/ybot.prefab
+- Assets/Data/Agents/Prefabs/MvnPuppet.prefab
+Dependencies: []

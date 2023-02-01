@@ -1,0 +1,31 @@
+ManifestFileVersion: 0
+CRC: 3455785497
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d4005cd6f07c6aa5d8b529157028c8b9
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b0363f7088f9761414f730641bf9a24b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Data/Textures/Various/Sand_01.png
+- Assets/Data/Textures/Various/grass_dry_02.png
+- Assets/Data/Textures/Various/grass_dry_01.png
+- Assets/Data/Textures/Various/Roof_tile_02.png
+- Assets/Data/Textures/Various/snow_01.png
+- Assets/Data/Textures/Various/grass_02.png
+- Assets/Data/Textures/Various/ice.png
+- Assets/Data/Textures/Various/Dirt_01.png
+- Assets/Data/Textures/Various/Water.png
+- Assets/Data/Textures/Various/Sand_02.png
+- Assets/Data/Textures/Various/grass_01.png
+- Assets/Data/Textures/Various/roof_tile_01.png
+- Assets/Data/Textures/Various/dirt_ice.png
+- Assets/Data/Textures/Various/dirt_dry.png
+- Assets/Data/Textures/Various/Floor_01.png
+Dependencies: []
