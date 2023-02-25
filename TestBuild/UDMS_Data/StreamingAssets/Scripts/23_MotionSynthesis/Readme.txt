@@ -1,3 +1,0 @@
-This folder contains Motion Synthesis scenaria
-
-not implemented yet ...

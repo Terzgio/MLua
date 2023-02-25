@@ -1,3 +1,0 @@
-This folder contains Light Dances
-
-not implemented yet ...

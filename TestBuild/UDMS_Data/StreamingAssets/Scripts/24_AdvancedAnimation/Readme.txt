@@ -1,3 +1,0 @@
-This folder contains Advanced Animation scenaria (masks, blend trees etc.)
-
-not implemented yet ...

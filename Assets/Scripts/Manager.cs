@@ -10,7 +10,7 @@ using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 using XLua;
 using TMPro;
-
+using System.Diagnostics;
 
 public class Manager : MonoBehaviour
 {
@@ -30,7 +30,7 @@ public class Manager : MonoBehaviour
               
 
         public static readonly string MusicBasePath = Application.streamingAssetsPath + "/Music";
-
+        string strCmdText;
 
 
         /// <summary>
@@ -131,7 +131,7 @@ public class Manager : MonoBehaviour
                     list.Append(value.ToString());
                 }
             }
-            Debug.Log(list.ToString());
+        UnityEngine.Debug.Log(list.ToString());
         }
 
         public void OpenScenarioBaseDirectory()
@@ -147,7 +147,7 @@ public class Manager : MonoBehaviour
                 var type = selected is LuaGroupDomain ? 'g' : 'i';
                 list.Append($"{type} \"{selected.DomainName}\"\n");
             }
-            Debug.Log(list.ToString());
+            UnityEngine.Debug.Log(list.ToString());
         }
 
         public void PrintRoomDomains()
@@ -161,7 +161,7 @@ public class Manager : MonoBehaviour
 
                 list.Append($"{type} \"{domain.DomainName}\"\n");
             }
-            Debug.Log(list.ToString());
+        UnityEngine.Debug.Log(list.ToString());
         }
 
         public void PrintRoomObjects()
@@ -171,7 +171,7 @@ public class Manager : MonoBehaviour
             {
                 list.Append($"\"{key}\"\n");
             }
-            Debug.Log(list.ToString());
+        UnityEngine.Debug.Log(list.ToString());
         }
 
         public void SelectDomain(char type, string domainName)
@@ -185,7 +185,7 @@ public class Manager : MonoBehaviour
                     SelectIndividualDomain(domainName);
                     break;
                 default:
-                    Debug.LogError("Unsupported type argument. Use 'g' for groups or 'i' for individual domains.");
+                UnityEngine.Debug.LogError("Unsupported type argument. Use 'g' for groups or 'i' for individual domains.");
                     break;
             }
         }
@@ -201,7 +201,7 @@ public class Manager : MonoBehaviour
                     DeselectIndividualDomain(domainName);
                     break;
                 default:
-                    Debug.LogError("Unsupported type argument. Use 'g' for groups or 'i' for individual domains.");
+                UnityEngine.Debug.LogError("Unsupported type argument. Use 'g' for groups or 'i' for individual domains.");
                     break;
             }
         }
@@ -213,7 +213,7 @@ public class Manager : MonoBehaviour
                 var groupDomain = ActiveLuaRoom.Groups[groupName];
                 if (SelectedObjects.Contains(groupDomain))
                 {
-                    Debug.Log($"The group {groupName} is already selected.");
+                UnityEngine.Debug.Log($"The group {groupName} is already selected.");
                 }
                 else
                 {
@@ -223,7 +223,7 @@ public class Manager : MonoBehaviour
             }
             else
             {
-                Debug.LogError($"No group named: {groupName} exists in the room.");
+            UnityEngine.Debug.LogError($"No group named: {groupName} exists in the room.");
             }
         }
 
@@ -234,7 +234,7 @@ public class Manager : MonoBehaviour
                 var groupDomain = ActiveLuaRoom.Groups[groupName];
                 if (!SelectedObjects.Contains(groupDomain))
                 {
-                    Debug.Log($"The group {groupName} is already not selected.");
+                UnityEngine.Debug.Log($"The group {groupName} is already not selected.");
                 }
                 else
                 {
@@ -244,7 +244,7 @@ public class Manager : MonoBehaviour
             }
             else
             {
-                Debug.LogError($"No group named: {groupName} exists in the room.");
+            UnityEngine.Debug.LogError($"No group named: {groupName} exists in the room.");
             }
         }
 
@@ -255,7 +255,7 @@ public class Manager : MonoBehaviour
                 var domain = ActiveLuaRoom.IndividualDomains[domainName];
                 if (SelectedObjects.Contains(domain))
                 {
-                    Debug.Log($"The domain {domainName} is already selected.");
+                UnityEngine.Debug.Log($"The domain {domainName} is already selected.");
                 }
                 else
                 {
@@ -265,7 +265,7 @@ public class Manager : MonoBehaviour
             }
             else
             {
-                Debug.LogError($"No individual domain named: {domainName} exists in the room.");
+            UnityEngine.Debug.LogError($"No individual domain named: {domainName} exists in the room.");
             }
         }
 
@@ -276,7 +276,7 @@ public class Manager : MonoBehaviour
                 var domain = ActiveLuaRoom.IndividualDomains[domainName];
                 if (!SelectedObjects.Contains(domain))
                 {
-                    Debug.Log($"The domain {domainName} is already not selected.");
+                UnityEngine.Debug.Log($"The domain {domainName} is already not selected.");
                 }
                 else
                 {
@@ -286,7 +286,7 @@ public class Manager : MonoBehaviour
             }
             else
             {
-                Debug.LogError($"No individual domain named: {domainName} exists in the room.");
+            UnityEngine.Debug.LogError($"No individual domain named: {domainName} exists in the room.");
             }
         }
 
@@ -365,7 +365,7 @@ public class Manager : MonoBehaviour
                     var basePathPos = shortPath.IndexOf(LuaManager.ScriptsBasePath, System.StringComparison.Ordinal);
                     if (basePathPos == -1)
                     {
-                        Debug.LogError($"Invalid room path: {path}. All the rooms must be inside: {LuaManager.ScriptsBasePath}");
+                    UnityEngine.Debug.LogError($"Invalid room path: {path}. All the rooms must be inside: {LuaManager.ScriptsBasePath}");
                         return;
                     }
                     shortPath = shortPath.Substring(basePathPos + LuaManager.ScriptsBasePath.Length).Trim(new char[] { '/' });
@@ -392,7 +392,7 @@ public class Manager : MonoBehaviour
                 var basePathPos = shortPath.IndexOf(LuaManager.ScriptsBasePath, System.StringComparison.Ordinal);
                 if (basePathPos == -1)
                 {
-                    Debug.LogError($"Invalid room path: {path}. All the rooms must be inside: {LuaManager.ScriptsBasePath}");
+                UnityEngine.Debug.LogError($"Invalid room path: {path}. All the rooms must be inside: {LuaManager.ScriptsBasePath}");
                     return;
                 }
 
@@ -460,12 +460,12 @@ public class Manager : MonoBehaviour
             SceneManager.LoadScene("TestingScene");
         }
 
-        public void UDMSlua()
-        {
+   public void UDMSlua()
+   {
 
-        //DisposeLuaEnvironment();
-        SceneManager.LoadScene("UDMS");
-        }
+    //DisposeLuaEnvironment();
+    SceneManager.LoadScene("UDMS");
+   }
 
         public void customload()
         {
@@ -482,7 +482,7 @@ public class Manager : MonoBehaviour
 
             if (basePathPos == -1)
             {
-                Debug.LogError($"Invalid room path: {path}. All the rooms must be inside: {LuaManager.ScriptsBasePath}");
+                UnityEngine.Debug.LogError($"Invalid room path: {path}. All the rooms must be inside: {LuaManager.ScriptsBasePath}");
             }
 
            // Debug.Log("path = " + path);
@@ -505,6 +505,20 @@ public class Manager : MonoBehaviour
         }
         }
 
+        public void callEditor()
+    {
+        Process process = null;
+        process = new Process();
+        process.StartInfo.FileName = "C:/Program Files/2021.1.24f1/Editor/Unity.exe";
+        process.StartInfo.Arguments = "-projectpath \"C:\\Users\\George\\Documents\\GitHub\\MLConcert\" -executeMethod kolpo.paok";
+        process.Start();
+
+        //strCmdText = "\"C:\\Program Files\\2021.1.24f1\\Editor\\Unity.exe\" -projectpath \"C:\\Users\\George\\Documents\\GitHub\\MLConcert\" -executeMethod kolpo.paok";
+
+
+
+    }
+
         /*
         public void StartTMP()
         {
@@ -520,7 +534,7 @@ public class Manager : MonoBehaviour
 
         public void Quit()
         {
-            Debug.Log("Quit game");
+        UnityEngine.Debug.Log("Quit game");
             Application.Quit();
         }
     
