@@ -510,7 +510,7 @@ public class Manager : MonoBehaviour
         Process process = null;
         process = new Process();
         process.StartInfo.FileName = "C:/Program Files/2021.1.24f1/Editor/Unity.exe";
-        process.StartInfo.Arguments = "-projectpath \"C:\\Users\\George\\Documents\\GitHub\\MLConcert\" -executeMethod kolpo.paok";
+        process.StartInfo.Arguments = "-projectpath \"C:\\Users\\George\\Documents\\GitHub\\MLua\" -executeMethod LoadTesting.loadScene";
         process.Start();
 
         //strCmdText = "\"C:\\Program Files\\2021.1.24f1\\Editor\\Unity.exe\" -projectpath \"C:\\Users\\George\\Documents\\GitHub\\MLConcert\" -executeMethod kolpo.paok";

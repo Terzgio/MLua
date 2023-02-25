@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 3406449339
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4f09961e938d33cefa60c0aa646baa94
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b0363f7088f9761414f730641bf9a24b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Data/Textures/Dungeon/stone_tile2.png
+- Assets/Data/Textures/Dungeon/stone_tile.png
+- Assets/Data/Textures/Dungeon/stone_tile_normal.png
+- Assets/Data/Textures/Dungeon/stone_tile2_normal.png
+Dependencies: []

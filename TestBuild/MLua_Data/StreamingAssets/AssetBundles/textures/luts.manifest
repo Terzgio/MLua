@@ -1,0 +1,58 @@
+ManifestFileVersion: 0
+CRC: 1836326335
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a77c28fef8ae109c5af2ceebf03d2186
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b0363f7088f9761414f730641bf9a24b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Data/Textures/LUTs/Stylized - Color/Tropical-Colors.png
+- Assets/Data/Textures/LUTs/Stylized - Film/Dark-Knight.png
+- Assets/Data/Textures/LUTs/Simple Color Filters/Filter-Red-Soft.png
+- Assets/Data/Textures/LUTs/Stylized - Color/True-BW.png
+- Assets/Data/Textures/LUTs/Stylized - Color/HeavyContrast.png
+- Assets/Data/Textures/LUTs/Stylized - Film/Dream-World.png
+- Assets/Data/Textures/LUTs/Stylized - Film/Fallen-World.png
+- Assets/Data/Textures/LUTs/Stylized - Color/Enhancer.png
+- Assets/Data/Textures/LUTs/Stylized - Color/Pale-Green.png
+- Assets/Data/Textures/LUTs/Stylized - Film/Matrix.png
+- Assets/Data/Textures/LUTs/Stylized - Film/No-Blood.png
+- Assets/Data/Textures/LUTs/Stylized - Film/Icy.png
+- Assets/Data/Textures/LUTs/Stylized - Color/Warm.png
+- Assets/Data/Textures/LUTs/Stylized - Film/Barren.png
+- Assets/Data/Textures/LUTs/Simple Color Filters/Filter-Blue-Heavy.png
+- Assets/Data/Textures/LUTs/Stylized - Color/Greenpink.png
+- Assets/Data/Textures/LUTs/Stylized - Film/Desert-Glare.png
+- Assets/Data/Textures/LUTs/Stylized - Film/Mr.Robot.png
+- Assets/Data/Textures/LUTs/Stylized - Film/Posterizer.png
+- Assets/Data/Textures/LUTs/Simple Color Filters/Filter-Yellow-Soft.png
+- Assets/Data/Textures/LUTs/Simple Color Filters/Filter-Blue-Soft.png
+- Assets/Data/Textures/LUTs/Stylized - Film/Barren-Night.png
+- Assets/Data/Textures/LUTs/Stylized - Film/Poison.png
+- Assets/Data/Textures/LUTs/Stylized - Film/Sin-City.png
+- Assets/Data/Textures/LUTs/Stylized - Film/Tale-World.png
+- Assets/Data/Textures/LUTs/Stylized - Film/Haze.png
+- Assets/Data/Textures/LUTs/Simple Color Filters/Filter-Green-Heavy.png
+- Assets/Data/Textures/LUTs/Stylized - Film/Bleak.png
+- Assets/Data/Textures/LUTs/Stylized - Color/Hard-Warmer.png
+- Assets/Data/Textures/LUTs/Stylized - Film/Under-Water.png
+- Assets/Data/Textures/LUTs/Simple Color Filters/Filter-Green-Soft.png
+- Assets/Data/Textures/LUTs/Stylized - Film/Shut-Down.png
+- Assets/Data/Textures/LUTs/Stylized - Color/Cold.png
+- Assets/Data/Textures/LUTs/Stylized - Color/Literally-BW.png
+- Assets/Data/Textures/LUTs/Stylized - Film/Fury.png
+- Assets/Data/Textures/LUTs/Stylized - Color/Blue-Grass.png
+- Assets/Data/Textures/LUTs/Simple Color Filters/Filter-Red-Heavy.png
+- Assets/Data/Textures/LUTs/Stylized - Film/Pastel-Dream.png
+- Assets/Data/Textures/LUTs/Stylized - Color/I-Hate-Yellow.png
+- Assets/Data/Textures/LUTs/Stylized - Film/Foggy.png
+- Assets/Data/Textures/LUTs/Simple Color Filters/Filter-Yellow-Heavy.png
+- Assets/Data/Textures/LUTs/Stylized - Color/Saturated-Green.png
+Dependencies: []
